@@ -1,0 +1,116 @@
+<h2>Introduction to Kotlin</h2>
+<div class="step-text">
+<p style="text-align: center;"><picture><img alt="Logo Kotlin" height="67" src="https://ucarecdn.com/d3ec070f-92aa-4473-af87-20d486a424a4/" width="300"/></picture></p>
+<p>Kotlin is a modern programming language, officially released by JetBrains in 2011. Kotlin 1.0, launched on February 15, 2016, is recognized as the first stable release. Starting with this version, JetBrains has committed to long-term backwards compatibility. Kotlin was designed to overcome some of Java's drawbacks, such as verbosity and null pointer exceptions. The creators of Kotlin aimed to develop a language that could utilize existing Java frameworks and libraries while offering a more expressive and crisp syntax.</p>
+<p>Kotlin envisions itself as a pragmatic language, providing solutions for common programming challenges. It's entirely interoperable with Java, which signifies it can use all existing Java libraries, frameworks, and tools. Plus, you can call Kotlin code from Java and vice versa.</p>
+<p><iframe src="https://form.typeform.com/to/OG1vq4gc#user_id=xxxxx"></iframe></p>
+<h5 id="main-features">Main Features:</h5>
+<ul>
+<li>
+<p><strong>Conciseness:</strong> Kotlin minimizes boilerplate code, which results in fewer lines of code to achieve the same functionality. For instance, data classes in Kotlin automatically generate <code class="language-kotlin">equals()</code>, <code class="language-kotlin">hashCode()</code>, and <code class="language-kotlin">toString()</code> methods:</p>
+<pre><code class="language-kotlin">data class User(val name: String, val age: Int)</code></pre>
+</li>
+<li>
+<p><strong>Expressiveness:</strong> Kotlin's syntax allows programmers to write more readable and understandable code. For example, the <code class="language-kotlin">when</code> expression is a more powerful version of Java's <code class="language-kotlin">switch</code>:</p>
+<pre><code class="language-kotlin">
+when (x) {
+    1 -&gt; print("x == 1")
+    2 -&gt; print("x == 2")
+    else -&gt; print("x is neither 1 nor 2")
+}</code></pre>
+</li>
+<li>
+<p><strong>Interoperability with Java:</strong> Kotlin was designed to be entirely interoperable with Java. This feature means you can effortlessly call Kotlin code from Java or Java code from Kotlin:</p>
+<pre><code class="language-kotlin">
+// Kotlin function
+fun getList(): List&lt;String&gt; = listOf("Kotlin", "Java")
+
+// Java code calling the Kotlin function
+List&lt;String&gt; list = MyKotlinFile.getList();</code></pre>
+</li>
+</ul>
+<p>Kotlin quickly became popular and in 2017, Google announced it as an official Android development language. Its modern features and seamless integration with Java make it a compelling choice for both new and existing projects.</p>
+<h5 id="setting-up-the-development-environment">Setting Up the Development Environment</h5>
+<p>To begin coding in Kotlin, you need to set up your development environment. You can use Kotlin for Android development, the backend, and desktop applications. Here's a simple guide to installing Kotlin and setting up an IDE:</p>
+<ol>
+<li>
+<p><strong>Install the Java Development Kit (JDK):</strong></p>
+<p>Make sure you have installed the JDK, as Kotlin runs on the Java Virtual Machine (JVM). You can download it from the official Oracle website or use OpenJDK.</p>
+</li>
+<li>
+<p><strong>Install IntelliJ IDEA or Android Studio:</strong></p>
+<ul>
+<li>
+<p>For general development, IntelliJ IDEA Community Edition is free and supports Kotlin out of the box. You can download it from the JetBrains website.</p>
+</li>
+<li>
+<p>For Android development, Android Studio, which is built on IntelliJ, is the best choice. It's available on the Android developer website.</p>
+</li>
+</ul>
+<p>During installation, remember to select the Kotlin plugin if it's not included by default.</p>
+</li>
+<li>
+<p><strong>Configure Your IDE:</strong></p>
+<ul>
+<li>
+<p>Open your IDE and create a new project.</p>
+</li>
+<li>
+<p>Select Kotlin as the language and choose the appropriate project type (JVM/Android).</p>
+</li>
+<li>
+<p>Configure the project SDK to the JDK you installed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Using Kotlin REPL:</strong></p>
+<p>The Kotlin REPL (Read-Eval-Print Loop) is a tool for running Kotlin code snippets quickly without creating a full project. It's excellent for experimentation. Access it in IntelliJ IDEA by navigating to <code class="language-kotlin">Tools -&gt; Kotlin -&gt; Kotlin REPL</code>.</p>
+<p>Here's a basic code snippet to try in the REPL:</p>
+<pre><code class="language-kotlin">fun main() {
+    val greeting = "Hello, Kotlin!"
+    println(greeting)
+}</code></pre>
+<p>Copy and paste this into the REPL, and it will execute, printing "Hello, Kotlin!" to the console.</p>
+</li>
+</ol>
+<p>By following these steps, you'll have a completely functional Kotlin development environment, ready for building applications or experimenting with the language.</p>
+<h5 id="basic-syntax-and-concepts-in-kotlin">Basic Syntax and Concepts in Kotlin</h5>
+<p>Kotlin is a statically-typed programming language that runs on the Java Virtual Machine (JVM). It's designed to be completely interoperable with Java while providing a more succinct syntax and improved features.</p>
+<h5 id="variables">Variables</h5>
+<p>In Kotlin, you use the <code class="language-kotlin">val</code> keyword to declare immutable variables and <code class="language-kotlin">var</code> for mutable ones.</p>
+<pre><code class="language-kotlin">val immutableString: String = "Hello" // Immutable variable
+var mutableInt: Int = 42 // Mutable variable
+</code></pre>
+<h5 id="data-types">Data Types</h5>
+<p>Kotlin comes with built-in data types such as <code class="language-kotlin">Int</code>, <code class="language-kotlin">Double</code>, <code class="language-kotlin">Float</code>, <code class="language-kotlin">Boolean</code>, etc. It automatically infers the type of a variable if not explicitly stated.</p>
+<pre><code class="language-kotlin">val inferredType = 42 // Int inferred
+</code></pre>
+<h5 id="operators">Operators</h5>
+<p>Kotlin utilizes similar operators to Java, like <code class="language-kotlin">+</code>, <code class="language-kotlin">-</code>, <code class="language-kotlin">*</code>, <code class="language-kotlin">/</code>, and <code class="language-kotlin">%</code>. It also supports operator overloading.</p>
+<h5 id="control-flow">Control Flow</h5>
+<p>In Kotlin, you can use the <code class="language-kotlin">if</code> statement as an expression, which is an improvement over Java's traditional usage.</p>
+<pre><code class="language-kotlin">val max = if (a &gt; b) a else b
+</code></pre>
+<p>Loops in Kotlin are similar to Java but with improvements. The <code class="language-kotlin">for</code> loop is more powerful with the <code class="language-kotlin">..</code> operator for ranges.</p>
+<pre><code class="language-kotlin">for (i in 1..10) {
+    println(i)
+}
+</code></pre>
+<p>The <code class="language-kotlin">while</code> and <code class="language-kotlin">do..while</code> loops function similarly to those in Java.</p>
+<p>Kotlin introduces the <code class="language-kotlin">when</code> expression, an advanced form of the switch-case expression, supporting arbitrary expressions.</p>
+<pre><code class="language-kotlin">when (x) {
+    1 -&gt; print("x == 1")
+    2 -&gt; print("x == 2")
+    else -&gt; { // Note the block
+        print("x is neither 1 nor 2")
+    }
+}
+</code></pre>
+<h5 id="improvements-over-java">Improvements Over Java</h5>
+<p>Kotlin's syntax is more concise, reducing boilerplate code. For example, you don't need to use semicolons at the end of each statement. Type inference reduces the verbosity of declaring variables. The <code class="language-kotlin">when</code> expression is more flexible than Java's switch-case, and Kotlin's <code class="language-kotlin">if</code> can be used as an expression, eliminating the need for the ternary operator.</p>
+<p>Kotlin's focus on safety with nullable types and its functional features make it a robust choice for modern application development.</p>
+<h5 id="conclusion">Conclusion</h5>
+<p>Welcome to the Kotlin community! Kotlin is a versatile and contemporary programming language that provides a range of features designed to improve upon the Java language. Its interoperability with Java ensures that developers can utilize the vast ecosystem of Java libraries and frameworks. Kotlin's concise syntax reduces boilerplate code, making writing and maintaining code easier.</p>
+<p>At Hyperskill we believe in learning by doing, where every practice, no matter how small, brings you closer to mastering Kotlin. Therefore, we encourage you to practice now, ask for help in the community if you're stuck, embrace mistakes, and experiment!</p>
+</div>
