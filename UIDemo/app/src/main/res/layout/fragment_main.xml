@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +55,10 @@
             android:id="@+id/main_ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:numStars="5" />
+            android:numStars="5"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="12dp"
+            android:progressTint="#00BCD4" />
 
         <TextView
             android:id="@+id/main_ratingBar_textView"
@@ -89,7 +93,10 @@
             android:id="@+id/Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_dialog_button" />
+            android:text="@string/main_dialog_button"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rectangle_button"/>
 
         <TextView
             android:layout_width="match_parent"
