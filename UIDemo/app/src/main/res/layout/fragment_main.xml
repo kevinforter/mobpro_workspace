@@ -19,8 +19,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:background="#673AB7"
             android:text="@string/main_second_description_layouts"
-            android:textSize="18sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:padding="6dp"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -41,14 +44,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#673AB7"
             android:text="@string/main_second_description_event"
-            android:textSize="18sp"/>
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:padding="6dp"/>
 
         <RatingBar
             android:id="@+id/main_ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:numStars="5"/>
+            android:numStars="5" />
 
         <TextView
             android:id="@+id/main_ratingBar_textView"
@@ -60,7 +66,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/main_second_description_spinner"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:background="#673AB7"
+            android:textColor="#FFFFFF"
+            android:padding="6dp" />
 
         <Spinner
             android:id="@+id/main_spinner"
@@ -71,7 +80,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/main_second_description_dialog"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:background="#673AB7"
+            android:textColor="#FFFFFF"
+            android:padding="6dp"/>
 
         <Button
             android:id="@+id/Button"
