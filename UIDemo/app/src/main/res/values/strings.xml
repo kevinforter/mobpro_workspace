@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">UI-Demo</string>
+    <string name="introText">Willkommen zur 2. Übung in Mobpro</string>
+
+    <string name="main_second_description_layouts">1. Layouts: Linear &amp; Constraint</string>
+    <string name="main_second_description_event">2. Events am Bsp. Rating Bar</string>
+    <string name="main_second_description_spinner">3. Spinner</string>
+    <string name="main_second_description_dialog">4. Dialog</string>
+
+    <string name="main_radio_linear">Linear Layout</string>
+    <string name="main_radio_constraint">Constraint Layout</string>
+
+    <string name="main_ratingBar_text"></string>
+
+    <string name="main_dialog_button">ZEIG MIR DIE AUSWAHL</string>
+
+    <string name="main_lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
 </resources>
