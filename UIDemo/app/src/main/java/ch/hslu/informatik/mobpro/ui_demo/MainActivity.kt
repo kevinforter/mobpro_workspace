@@ -2,8 +2,6 @@ package ch.hslu.informatik.mobpro.ui_demo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
 
