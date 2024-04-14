@@ -6,13 +6,21 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import java.time.LocalDateTime
+import java.time.LocalTime
+import java.time.ZonedDateTime
+import java.util.Date
 
 class MainActivity : AppCompatActivity() {
 
     private val gmmIntentUri = Uri.parse("geo:37.7749,-122.4194")
     private val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+    private val MY_ACTION_SHOW_TEXT = "ch.hslu.mobpro.actions.SHOW_TEXT"
+    private val MY_EXTRA_KEY = "text"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,5 +56,25 @@ class MainActivity : AppCompatActivity() {
                 .setPositiveButton("DANKE, PACKAGEMANAGER!") { dialog, _ -> dialog.dismiss() }
                 .show()
         }
+
+        if (intent.action == MY_ACTION_SHOW_TEXT) {
+            val text = intent.getStringExtra(MY_EXTRA_KEY)
+            findViewById<TextView>(R.id.EigeneAction).text = text
+        }
+
+        val showTextButton = findViewById<Button>(R.id.buttonIntentMitEigenerActionStarten)
+        showTextButton.setOnClickListener {
+            startCustomIntentOnClick()
+        }
+    }
+
+    private fun startCustomIntentOnClick() {
+        val customIntent = Intent()
+        customIntent.action = MY_ACTION_SHOW_TEXT
+        val myText ="""Activity gestartet durch folgende Intent-ACTION:
+        '$MY_ACTION_SHOW_TEXT'
+        Jetzt = ${Date()}""".trimIndent()
+        customIntent.putExtra(MY_EXTRA_KEY, myText)
+        startActivity(customIntent)
     }
 }

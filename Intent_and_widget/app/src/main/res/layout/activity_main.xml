@@ -59,6 +59,12 @@
             android:backgroundTint="#673AB7"
             android:textColor="#FFFFFF"
             android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/EigeneAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hier sollte etwas stehen glaube ich" />
     </LinearLayout>
 </ScrollView>
 
