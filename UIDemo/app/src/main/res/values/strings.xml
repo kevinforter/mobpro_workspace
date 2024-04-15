@@ -15,4 +15,7 @@
     <string name="main_dialog_button">ZEIG MIR DIE AUSWAHL</string>
 
     <string name="main_lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+
+    <string name="main_buttonIntentMitEigenerActionStarten">INTENT MIT EIGNER ACTION STARTEN</string>
+    <string name="main_EigeneAction">Hier sollte etwas stehen glaube ich</string>
 </resources>
