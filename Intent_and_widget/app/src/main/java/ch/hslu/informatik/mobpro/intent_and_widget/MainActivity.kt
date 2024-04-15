@@ -67,6 +67,8 @@ class MainActivity : AppCompatActivity() {
     private fun startCustomIntentOnClick() {
         val customIntent = Intent()
         customIntent.action = MY_ACTION_SHOW_TEXT
+        customIntent.addCategory(Intent.CATEGORY_DEFAULT)
+        customIntent.addCategory(Intent.CATEGORY_LAUNCHER)
         val myText ="""Activity gestartet durch folgende Intent-ACTION:
         '$MY_ACTION_SHOW_TEXT'
         Jetzt = ${Date()}""".trimIndent()
